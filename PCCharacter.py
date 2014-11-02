@@ -27,5 +27,6 @@ class PCCharacter(object):
         '''
         pass
 
-    def add_class(self, type):
+    def add_level(self, class_):
+        print "Adding level:", class_
         pass

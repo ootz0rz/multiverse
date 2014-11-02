@@ -1,4 +1,4 @@
-class PCClassBase(object):
+class PCRaceBase(object):
     
     def __init__(self, PC, name):
         self.PC = PC
