@@ -6,7 +6,7 @@ class PCCharacter(object):
     def __init__(self):
         # Basic bio info
         self.name = ""
-        self.class_ = None
+        self.classPerLevel = []
         self.race = None
         self.age = 0
         self.gender = ""
@@ -25,4 +25,7 @@ class PCCharacter(object):
         '''
         Run all necessary calculations :o
         '''
+        pass
+
+    def add_class(self, type):
         pass

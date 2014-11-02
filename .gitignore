@@ -55,3 +55,6 @@ target/
 
 # Other
 /static/css/*.css
+*.scssc
+/static/css/*.map
+/static/css/.sass-cache

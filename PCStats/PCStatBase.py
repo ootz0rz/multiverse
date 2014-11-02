@@ -1,7 +1,9 @@
 class PCStatBase(object):
 
-    def __init__(self, name):
+    def __init__(self, PC, name, short):
+        self.PC = PC
         self.name = name
+        self.short = short
 
         # defaults
         self.base = 10

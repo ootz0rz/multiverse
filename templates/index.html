@@ -18,14 +18,36 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    
+                    <a class="navbar-brand" href="#">Multi-Verse RPG Character Sheet</a>
                 </div>
             </div>
         </nav>
 
-        <div class="container">
-            <div class="starter-template">
-                <h1>Multi-Verse RPG Character Sheet</h1>
+        <div class="container sheet">
+            <div class="basicbio">
+                <div class="name">
+                    <label for="charName">Full Character Name:</label>
+                    <input type="text" name="charName">
+                </div>
+                <div class="levels">
+                    <div class="listing">
+                        <h3>Class Per Level</h3>
+                        <div class="current">
+                            
+                        </div>
+                    </div>
+                    <div class="add">
+                        <span class="class">
+                            <label for="class">Add <input type="text" name="numToAdd" value="1" class="numToAdd" /> level(s) of class:</label>
+                            <select name="select" id="select">
+                                <option value="1">Soulmech / A.I. Avatar</option>
+                            </select>
+                        </span>
+                        <span class="add">
+                            <button>Add</button>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div><!-- /.container -->
     </body>
