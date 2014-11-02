@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+        <link rel="stylesheet" type="text/css" href="${ url_for('static', filename='css/index.css') }">
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -40,7 +40,9 @@
                         <span class="class">
                             <label for="class">Add <input type="text" name="numToAdd" value="1" class="numToAdd" /> level(s) of class:</label>
                             <select name="select" id="select">
-                                <option value="1">Soulmech / A.I. Avatar</option>
+                                % for key in data['classes']:
+                                    <option value="${key[1]}">${key[0]}</option>
+                                % endfor 
                             </select>
                         </span>
                         <span class="add">

@@ -1,5 +1,6 @@
 class PCRaceBase(object):
+
+    name = ""
     
-    def __init__(self, PC, name):
+    def __init__(self, PC):
         self.PC = PC
-        self.name = name
